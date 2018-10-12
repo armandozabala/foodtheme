@@ -28,7 +28,7 @@ export class LoginPage {
 				this.navCtrl.setRoot("HomePage").then(() => {
 					loading.dismiss();
 				})
-			}, 1500);
+			}, 500);
 		});
 	}
 

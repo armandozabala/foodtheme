@@ -1,0 +1,140 @@
+<ion-content>
+	<div class="bg">
+		<img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+		 alt="">
+		<div>
+			<span class="left-icon" (click)="gotToHome()">
+				<ion-icon name="ios-arrow-dropleft"></ion-icon>
+			</span>
+			<span class="right-icon">
+				<ion-icon name="ios-open-outline"></ion-icon>
+			</span>
+		</div>
+		<ion-card class="card-main">
+			<span class="c-title">The Soothing Dessert</span>
+			<div class="c-rate">
+				<span class="icons">
+					<ion-icon name="star"></ion-icon>
+					<ion-icon name="star"></ion-icon>
+					<ion-icon name="star"></ion-icon>
+					<ion-icon name="star"></ion-icon>
+					<ion-icon name="star-outline"></ion-icon>
+				</span>
+				<span class="reviews">
+					4.6
+					<span>(26 Reviews)</span>
+				</span>
+			</div>
+			<div class="c-info">
+				<ion-row>
+					<ion-col>
+						<ion-icon name="restaurant"></ion-icon>
+						Dessert
+					</ion-col>
+					<ion-col>
+						<ion-icon name="pin"></ion-icon>
+						1.6km
+					</ion-col>
+					<ion-col>
+						<ion-icon name="logo-usd"></ion-icon>
+						23 / Pax
+					</ion-col>
+				</ion-row>
+			</div>
+			<div class="clearfix"></div>
+			<div class="c-detail">
+				<span>
+					<ion-icon name="clock"></ion-icon>
+					<span>09:00 - 22:00</span>
+				</span>
+				<span>
+					<ion-icon name="car"></ion-icon>
+					<span>Parking Lot</span>
+				</span>
+				<br>
+				<span>
+					<ion-icon name="ios-home-outline"></ion-icon>
+					<span>25, Jalan 145, Tmn Sebelah</span>
+				</span>
+			</div>
+		</ion-card>
+
+		<div class="slider-food">
+			<div class="s-title">Recommended dishes</div>
+			<div class="s-body">
+				<ion-slides slidesPerView="2" spaceBetween="-10">
+					<ion-slide>
+						<ion-card>
+							<img src="assets/icon/menu-fried-rice.png" alt="">
+						</ion-card>
+						<div class="s-menu">
+							Fried Rice
+							<span>$ 12.00</span>
+						</div>
+					</ion-slide>
+					<ion-slide>
+						<ion-card>
+							<img src="assets/icon/menu-ice-cream.png" alt="">
+						</ion-card>
+						<div class="s-menu">
+							Ice Cream
+							<span>$ 12.00</span>
+						</div>
+					</ion-slide>
+					<ion-slide>
+						<ion-card>
+							<img src="assets/icon/menu-pie.png" alt="">
+						</ion-card>
+						<div class="s-menu">
+							Rasberry Pie
+							<span>$ 12.00</span>
+						</div>
+					</ion-slide>
+				</ion-slides>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="reviews">
+			<div class="r-title">The comments</div>
+			<div class="r-body">
+				<ion-row>
+					<ion-col col-3>
+						<img src="assets/icon/user1.jpg" alt="">
+					</ion-col>
+					<ion-col>
+						<span class="r-user">John Doe</span>
+						<span class="r-comment">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						</span>
+						<span class="r-rate">
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star-outline"></ion-icon>
+						</span>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-3>
+						<img src="assets/icon/user2.jpeg" alt="">
+					</ion-col>
+					<ion-col>
+						<span class="r-user">John Doe</span>
+						<span class="r-comment">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						</span>
+						<span class="r-rate">
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star"></ion-icon>
+							<ion-icon name="star-outline"></ion-icon>
+						</span>
+					</ion-col>
+				</ion-row>
+			</div>
+		</div>
+	</div>
+
+</ion-content>

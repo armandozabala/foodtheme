@@ -1,0 +1,247 @@
+page-restaurant {
+    $font-raleway: 'Raleway', sans-serif;
+    $font-rubik: 'Rubik', sans-serif;
+    $font-krub: 'Krub', sans-serif;
+
+    $color1: map-get($colors, color1);
+    $color2: map-get($colors, color2);
+    $color3: map-get($colors, color3);
+    $color4: map-get($colors, color4);
+    $color5: map-get($colors, color5);
+    $color6: map-get($colors, color6);
+    $color7: map-get($colors, color7);
+    $secondary: map-get($colors, secondary);
+    $white: #FFFFFF;
+    $light: #EBEBEB;
+    $tomato: #C42C34;
+
+    font-family: $font-raleway;
+    background-color: $color7;
+
+    .bg {
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 17em;
+            object-fit: cover;
+        }
+
+        div { 
+
+            .left-icon {
+                height: 3em;
+                width: 3em;
+                position: absolute;
+                left: 2em;
+                top: 3em;
+
+                text-align: center;
+                background-color: $white;
+                border-radius: 50%;
+
+                ion-icon {
+                    padding: .2em;
+                    font-size: 2em;
+                }
+            }
+
+            .right-icon {
+                height: 3em;
+                width: 3em;
+                position: absolute;
+                right: 2em;
+                top: 3em;
+
+                text-align: center;
+                background-color: $white;
+                border-radius: 50%;
+
+                ion-icon {
+                    padding: .2em;
+                    font-size: 2em;
+                }
+            }
+
+        }
+
+        .card-main {
+            position: absolute;
+            top: 15em;
+            margin-top: -5em;
+            margin-bottom: 2em;
+
+            padding: 1em;
+            text-align: left;
+            background-color: $white !important;
+            border-radius: 10px;
+
+            .c-title {
+                display: block;
+                padding-bottom: .5em;
+
+                font-size: 1.3em;
+                font-weight: 700;
+            }
+
+            .c-rate {
+                display: block;
+                padding-bottom: .5em;
+                font-weight: 600;
+
+                .icons {
+                    margin-right: 1em;
+                    color: $tomato;
+                }
+
+                .reviews {
+                    color: $tomato;
+
+                    font-family: $font-krub;
+                    font-size: .8em;
+
+                    span {
+                        padding-left: 1em;
+                        color: $color3;
+                    }
+                }
+            }
+
+            .c-info {
+                font-size: .9em;
+
+                ion-col {
+                    padding: 0;
+                    color: $color5;
+
+                    font-family: $font-krub;
+                    font-weight: 600;
+
+                    ion-icon {
+                        color: $color3;
+                        padding-right: .5em;
+                    }
+                }
+            }
+
+            .clearfix {
+                border-bottom: 1px solid $light;
+                margin: 1em 0;
+            }
+        
+
+            .c-detail {
+
+                span {
+                    margin: 0 1.5em 2em 0;
+                    display: inline;
+
+                    color: $color5;
+                    font-family: $font-krub;
+                    font-weight: 600;
+
+                    ion-icon {
+                        color: $color3;
+                        padding-right: .5em;
+                    }
+
+                    span {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }        
+
+    }
+
+    .slider-food {
+        padding: 1em;
+        margin-top: 5em;
+
+        .s-title {
+            font-weight: 700;            
+        }
+
+        .s-body {
+            padding: 1em 1em 1.5em 0;
+
+            ion-card {
+                margin-left: 0;
+                border-radius: 15px;
+
+                img {
+                    height: 8em;
+                    object-fit: cover;
+                }
+            }
+
+            .s-menu {
+                text-align: left;
+                font-size: .8em;
+                font-weight: 600;
+
+                span {
+                    display: block;
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+
+    }
+
+    .clearfix {
+        border-bottom: 1px solid $light;
+        margin: .5em 1em;
+    }
+
+    .reviews {
+        padding: 1em;
+
+        .r-title {
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+
+        .r-body {
+
+            ion-row {
+                margin-bottom: .5em;
+
+                ion-col {
+                    img {
+                        width: 4.5em !important;
+                        height: 4.5em !important;
+                        margin-right: 3em;
+                        border-radius: 50%;
+                    }
+
+                    .r-user {
+                        display: block;
+                        margin-bottom: .5em;
+
+                        font-weight: 600;
+                    }
+
+                    .r-comment {
+                        display: block;
+
+                        font-weight: 400;
+                        font-size: .8em;
+                    }
+
+                    .r-rate {
+                        margin-top: .5em;
+
+                        display: block;
+                        color: $tomato;
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
