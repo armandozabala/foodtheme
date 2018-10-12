@@ -1,0 +1,35 @@
+<ion-content>
+	<div class="login-box">
+		<div class="logo">
+			<img src="assets/icon/fried-rice.png" alt="">
+		</div>
+		<form action="">
+			<ion-row>
+				<ion-col col-2>
+					<ion-icon name="ios-mail"></ion-icon>
+				</ion-col>
+				<ion-col>
+					<input type="email" placeholder="Email Address">
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-2>
+					<ion-icon name="ios-lock"></ion-icon>
+				</ion-col>
+				<ion-col>
+					<input type="password" placeholder="*** ***">
+				</ion-col>
+			</ion-row>
+			<div class="btn">
+				<button ion-button round large color="color-main" (click)="gotToHome()">Sign In</button>
+			</div>
+			<div class="forgot">
+				Forgot Password?
+			</div>
+		</form>
+		<div class="clearfix"></div>
+		<div class="sign-up">
+			New here? Sign Up
+		</div>
+	</div>
+</ion-content>

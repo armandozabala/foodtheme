@@ -2,28 +2,12 @@
     <ion-content>
         <div class="menu-list">
             <div class="menu-avatar">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI6ID4Pq9EjDvL2TMlIz--FUhnxQyF8cVYn3ZkWWHcTJgq89wx" alt="">
+                <img src="assets/icon/logo2.png" alt="">
                 <span>Fill Your Tummy</span>                
             </div>
-            <div class="menu-item">
-                <ion-icon name="ios-home-outline"></ion-icon>
-                Discover Foods
-            </div>
-            <div class="menu-item">
-                <ion-icon name="ios-search"></ion-icon>
-                Search
-            </div>
-            <div class="menu-item">
-                <ion-icon name="heart-outline"></ion-icon>
-                My Favorite Food
-            </div>
-            <div class="menu-item">
-                <ion-icon name="ios-navigate-outline"></ion-icon>
-                Foods Near Me
-            </div>
-            <div class="menu-item">
-                <ion-icon name="ios-log-in"></ion-icon>
-                Log In
+            <div class="menu-item" menuClose *ngFor="let p of pages" (click)="goToPage(p)">
+                <ion-icon name="{{ p.icon }}"></ion-icon>
+                {{ p.name }}
             </div>
         </div>
     </ion-content>

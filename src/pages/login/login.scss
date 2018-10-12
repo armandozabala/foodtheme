@@ -1,0 +1,117 @@
+page-login {
+    $font-raleway: 'Raleway', sans-serif;
+    $font-rubik: 'Rubik', sans-serif;
+    $font-krub: 'Krub', sans-serif;
+
+    $color1: map-get($colors, color1);
+    $color2: map-get($colors, color2);
+    $color3: map-get($colors, color3);
+    $color4: map-get($colors, color4);
+    $color5: map-get($colors, color5);
+    $color6: map-get($colors, color6);
+    $color7: map-get($colors, color7);
+    $tomato: map-get($colors, color-main);
+    $secondary: map-get($colors, secondary);
+    $white: #FFFFFF;
+    $light: #EBEBEB;
+
+    ion-content {
+
+        font-family: $font-raleway;
+        color: $tomato;
+
+        .login-box {
+            // background-image: url('../assets/imgs/bg.jpg'), linear-gradient(#0000009d, #0000009d);
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            background-color: $white !important;
+            height: 100%;
+
+            padding: 2em 3em;
+
+            .logo {
+                display: block;
+                text-align: center;
+                margin-top: 3em;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            form{
+                margin-top: 2.5em;
+
+                ion-row {
+                    // background-color: rgba(7, 8, 10, 0.5);
+                    padding: .5em;
+                    margin: .5em;
+
+                    ion-col {
+
+                        ion-icon {
+                            height: 100%;
+                            font-size: 2em;
+                            color: $color5;
+                        }
+
+                        input {
+                            border: none;
+                            background-color: transparent;
+                            width: 100%;
+                            padding: .5em;
+                            border-bottom: 2px solid $color5;
+
+                            color: $color5;
+                            font-weight: 900;
+
+                            &::placeholder {
+                                color: $color5;
+                            }
+                        }
+
+                        input:focus {
+                            border-bottom: 2px solid $tomato;
+                        }
+                    }
+                }
+
+                .btn {                    
+                    margin-top: 2em;
+                    display: block;
+                    text-align: center;
+
+                    button {
+                        text-transform: none;
+                        width: 80%;
+                    }
+                }
+
+                .forgot {
+                    margin-top: 1em;
+                    display: block;
+                    text-align: center;
+
+                    color: $tomato;
+                    font-weight: 600;
+                }
+        
+            }
+
+            .clearfix {
+                border-bottom: 1px solid $light;
+                margin: 5em 1.5em .5em 1.5em;
+            }
+
+            .sign-up {
+                margin-top: 1em;
+                display: block;
+                text-align: center;
+
+                color: $tomato;
+                font-weight: 600;
+            }
+        }
+    }
+}
