@@ -38,9 +38,17 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
-);
+  dark:       #222,
 
+  color1:     #F44336,
+  color2:     #D32F2F,
+  color3:     #b6b6b6,
+  color4:     #838282,
+  color5:     #252C36,
+  color6:     #fdcb4e,
+  color7:     #F7F7F7
+
+);
 
 // App iOS Variables
 // --------------------------------------------------
@@ -86,3 +94,4 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+@import url('https://fonts.googleapis.com/css?family=Krub:400,500,600,700|Raleway:400,500,600,700,900|Rubik:400,500,700,900');
