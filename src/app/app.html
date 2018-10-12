@@ -1,1 +1,34 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+    <ion-content>
+        <div class="menu-list">
+            <div class="menu-avatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI6ID4Pq9EjDvL2TMlIz--FUhnxQyF8cVYn3ZkWWHcTJgq89wx" alt="">
+                <span>Fill Your Tummy</span>                
+            </div>
+            <div class="menu-item">
+                <ion-icon name="ios-home-outline"></ion-icon>
+                Discover Foods
+            </div>
+            <div class="menu-item">
+                <ion-icon name="ios-search"></ion-icon>
+                Search
+            </div>
+            <div class="menu-item">
+                <ion-icon name="heart-outline"></ion-icon>
+                My Favorite Food
+            </div>
+            <div class="menu-item">
+                <ion-icon name="ios-navigate-outline"></ion-icon>
+                Foods Near Me
+            </div>
+            <div class="menu-item">
+                <ion-icon name="ios-log-in"></ion-icon>
+                Log In
+            </div>
+        </div>
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

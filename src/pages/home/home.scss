@@ -13,26 +13,42 @@ page-home {
     $secondary: map-get($colors, secondary);
     $white: #FFFFFF;
     $light: #EBEBEB;
-    // $tomato: #2DD297;
     $tomato: #C42C34;
-    $wallpaper: "https://www.designyourway.net/diverse/minimalwp/goodmorning.jpg";
+
+    font-family: $font-raleway;
 
     ion-content {
 
-        font-family: $font-raleway;
         background-color: $color7 !important;
-
         .slider-box {
-            height: 25em;
+            height: 23em;
             background-color: $tomato;
             // background-image: linear-gradient(-135deg, $tomato, #111);
-            padding: 3em 0em 1.5em 1.5em;
-            
+            padding: 2em 0em 1.5em 1.5em;
+
             .header {
-                color: $light;
+                position: relative;
+                display: block;
+                color: $white;
                 font-weight: 900;
-                font-size: 2em;
+                font-size: 1.5em;
+
+                .menu {
+                    margin-right: 1.5em;
+
+                    ion-icon {
+                        font-size: 2em;
+                    }
+                }
+
+                .title {
+                    position: absolute;
+                    top: .3em;
+                    font-size: 1.1em;
+                }
+
             }
+
 
             .body {
                 padding-top: 1em;
@@ -111,7 +127,7 @@ page-home {
                             }
                         }
                     }
-    
+
                 }
 
 
@@ -122,7 +138,7 @@ page-home {
         .slider-menu {
             margin-top: 3em;
             padding: 3em 0em 1.5em 1.5em;
-            
+
             .menu {
                 font-size: .7em;
                 font-weight: 500;
@@ -165,12 +181,13 @@ page-home {
             }
 
             .list-body {
-
                 ion-card {
-                    margin: 0;
-                    padding: 1em;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 1em;
+                    padding: .5em;
                     width: 100%;
-                    border-radius: 1em;                    
+                    border-radius: 1em;
 
                     ion-row {
                         // border: 1px solid tomato;
@@ -183,11 +200,11 @@ page-home {
                                 object-fit: cover;
                                 // border: 1px solid tomato;
                                 border-radius: 1em;
-                            }        
+                            }
 
                             .header {
-                                font-weight: 600;                                
-    
+                                font-weight: 600;
+
                                 span {
                                     display: block;
                                     margin-top: .5em;
@@ -202,12 +219,12 @@ page-home {
 
                                 font-family: $font-krub;
                                 font-size: .75em;
-                                ion-icon {  
-                                    color: $color3;                                  
+                                ion-icon {
+                                    color: $color3;
                                     margin-right: .5em;
                                 }
                             }
-                        }    
+                        }
                     }
                 }
             }
