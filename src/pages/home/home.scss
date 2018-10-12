@@ -13,7 +13,9 @@ page-home {
     $secondary: map-get($colors, secondary);
     $white: #FFFFFF;
     $light: #EBEBEB;
-    $tomato: #c3303e;
+    // $tomato: #2DD297;
+    $tomato: #C42C34;
+    $wallpaper: "https://www.designyourway.net/diverse/minimalwp/goodmorning.jpg";
 
     ion-content {
 
@@ -23,9 +25,7 @@ page-home {
         .slider-box {
             height: 25em;
             background-color: $tomato;
-            // background-image: linear-gradient(#5247478a, #9a944b73), url("https://images.pexels.com/photos/189268/pexels-photo-189268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-            // background-position: center;
-            // background-size: cover;
+            // background-image: linear-gradient(-135deg, $tomato, #111);
             padding: 3em 0em 1.5em 1.5em;
             
             .header {
