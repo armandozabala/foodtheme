@@ -15,7 +15,7 @@ export class RestaurantPage {
 	}
 
 	gotToHome(){		
-		this.navCtrl.setRoot("HomePage");
+		this.navCtrl.pop();
 	}
 
 }

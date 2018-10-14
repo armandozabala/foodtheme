@@ -23,9 +23,9 @@ export class HomePage {
 		loading.present().then(() => {
 			
 			setTimeout(() => {
-				this.navCtrl.setRoot("RestaurantPage").then(() => {
+				this.navCtrl.push("RestaurantPage").then(() => {
 					loading.dismiss();
-				})
+				});
 			}, 500);
 		});
 

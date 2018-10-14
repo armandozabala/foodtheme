@@ -20,6 +20,7 @@ page-restaurant {
 
     .bg {
         height: 100%;
+        position: relative;
 
         img {
             width: 100%;
@@ -27,38 +28,40 @@ page-restaurant {
             object-fit: cover;
         }
 
-        div {
+        .r-header-icon {
+            position: absolute;
+            width: 100%;
+            top: 2em;
 
-            .left-icon {
+            span:first-child {
+
                 height: 3em;
                 width: 3em;
                 position: absolute;
                 left: 2em;
-                top: 3em;
 
                 text-align: center;
                 background-color: $white;
                 border-radius: 50%;
 
                 ion-icon {
-                    padding: .2em;
+                    padding: .25em;
                     font-size: 2em;
                 }
             }
 
-            .right-icon {
+            span:last-child {
                 height: 3em;
                 width: 3em;
                 position: absolute;
                 right: 2em;
-                top: 3em;
 
                 text-align: center;
                 background-color: $white;
                 border-radius: 50%;
 
                 ion-icon {
-                    padding: .2em;
+                    padding: .25em;
                     font-size: 2em;
                 }
             }
