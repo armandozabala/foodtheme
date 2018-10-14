@@ -1,0 +1,87 @@
+page-favorite {
+    $font-raleway: 'Raleway', sans-serif;
+    $font-rubik: 'Rubik', sans-serif;
+    $font-krub: 'Krub', sans-serif;
+
+    $color1: map-get($colors, color1);
+    $color2: map-get($colors, color2);
+    $color3: map-get($colors, color3);
+    $color4: map-get($colors, color4);
+    $color5: map-get($colors, color5);
+    $color6: map-get($colors, color6);
+    $color7: map-get($colors, color7);
+    $secondary: map-get($colors, secondary);
+    $white: #FFFFFF;
+    $light: #EBEBEB;
+    $tomato: #C42C34;
+
+    font-family: $font-raleway;
+    
+    ion-content {
+        .list {
+            padding: 1.5em 1.5em 2em 1.5em;
+
+            .list-header {
+                margin-bottom: 1.5em;
+
+                color: $tomato;
+                font-weight: 500;
+                font-family: $font-rubik;
+                span {
+                    margin-left: 1em;
+                    color: $color4;
+
+                    font-size: .8em;
+                    font-family: $font-krub;
+                }
+
+            }
+
+            .list-body {
+                ion-card {
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 1em;
+                    padding: .5em;
+                    width: 100%;
+
+                    ion-row {
+
+                        ion-col {
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+
+                            .header {
+                                font-weight: 600;
+
+                                span {
+                                    display: block;
+                                    margin-top: .5em;
+
+                                    font-size: .8em;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            ion-row {
+                                margin-top: 1.8em;
+
+                                font-family: $font-krub;
+                                font-size: .75em;
+                                ion-icon {
+                                    color: $color3;
+                                    margin-right: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
