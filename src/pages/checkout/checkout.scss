@@ -1,0 +1,207 @@
+page-checkout {
+    $font-raleway: 'Raleway', sans-serif;
+    $font-rubik: 'Rubik', sans-serif;
+    $font-krub: 'Krub', sans-serif;
+
+    $color1: map-get($colors, color1);
+    $color2: map-get($colors, color2);
+    $color3: map-get($colors, color3);
+    $color4: map-get($colors, color4);
+    $color5: map-get($colors, color5);
+    $color6: map-get($colors, color6);
+    $color7: map-get($colors, color7);
+    $secondary: map-get($colors, secondary);
+    $white: #FFFFFF;
+    $light: #EBEBEB;
+    $tomato: #C42C34;
+
+    font-family: $font-raleway;
+    background-color: $color7;
+
+    .checkout {
+
+        padding: .5em;
+
+        .checkout-header {
+            .card-main {
+                padding: 1em;
+                text-align: left;
+                background-color: $white !important;
+                border-radius: 10px;
+
+                .c-title {
+                    display: block;
+                    padding-bottom: .5em;
+
+                    font-size: 1.3em;
+                    font-weight: 700;
+                }
+
+                .c-rate {
+                    display: block;
+                    padding-bottom: .5em;
+                    font-weight: 600;
+
+                    .icons {
+                        margin-right: 1em;
+                        color: $tomato;
+                    }
+
+                    .reviews {
+                        color: $tomato;
+
+                        font-family: $font-krub;
+                        font-size: .8em;
+
+                        span {
+                            padding-left: 1em;
+                            color: $color3;
+                        }
+                    }
+                }
+
+                .c-info {
+                    font-size: .9em;
+
+                    ion-col {
+                        padding: 0;
+                        color: $color5;
+
+                        font-family: $font-krub;
+                        font-weight: 600;
+
+                        ion-icon {
+                            color: $color3;
+                            padding-right: .5em;
+                        }
+                    }
+                }
+
+                .clearfix {
+                    border-bottom: 1px solid $light;
+                    margin: 1em 0;
+                }
+
+
+                .c-detail {
+
+                    span {
+                        margin: 0 1.5em 2em 0;
+                        display: inline;
+
+                        color: $color5;
+                        font-family: $font-krub;
+                        font-weight: 600;
+
+                        ion-icon {
+                            color: $color3;
+                            padding-right: .5em;
+                        }
+
+                        span {
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .checkout-body {
+            ion-card {
+                border-radius: 10px;
+
+                .checkout-list {
+
+                    padding: .5em;
+    
+                    ion-card {
+                        position: relative;
+                        padding: 1em;
+    
+                        h2 {
+                            font-size: 1em;
+                            font-weight: 600;
+                        }
+    
+                        p {
+                            font-size: .7em;
+                            font-weight: 400;
+                            color: $color4;
+                        }
+    
+                        .price {
+                            position: absolute;
+                            top: 1.5em;
+                            right: 1em;
+    
+                            font-weight: 500;
+                            font-family: $font-rubik;
+                            color: $tomato;
+                        }
+                    }
+                }
+    
+                .checkout-summary {
+    
+                    ion-row {
+                        padding: .2em 1em;
+                        font-size: 1em;
+    
+                        ion-col:nth-child(2) {
+                            font-family: $font-rubik;
+                        }
+        
+                    }
+    
+                    .total {
+                        font-weight: 500;
+                        font-size: 1.2em;
+                    }
+    
+                    .method {
+                        padding: auto;
+                        height: 100%;
+
+                        img {
+                            display: inline;
+                            width:  auto;
+                            height: 3em;
+                            margin-right: 1.5em;
+                        }
+
+                        span {
+                            position: relative;
+                            top: -1.2em;
+
+                            font-family: $font-rubik;
+                        }
+
+                        ion-col:nth-child(2) {
+                            margin-right: .5em;
+                            position: relative;
+                            top: 1.2em;
+
+                            font-size: .8em;
+                            color: $color4;
+                        }
+                    }
+    
+                }    
+            }    
+        }
+
+        .checkout-footer {
+            padding: 1em 0;
+            margin: 10px;
+
+            button {
+                text-transform: none;
+
+                font-weight: 600;
+            }
+        }
+    
+
+    }
+
+}

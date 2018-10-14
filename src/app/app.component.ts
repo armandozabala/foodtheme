@@ -8,7 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 	selector: 'page-app',
 })
 export class MyApp {
-	rootPage: any = 'FavoritePage';
+	rootPage: any = 'HomePage';
 	@ViewChild(Nav) nav: Nav;
 
 	public pages: any = [
@@ -28,9 +28,9 @@ export class MyApp {
 			page: 'FavoritePage'
 		},
 		{
-			icon: 'ios-home-outline',
-			name: 'Add To Cart',
-			page: 'AddToCartPage'
+			icon: 'ios-card-outline',
+			name: 'Pay Order',
+			page: 'CheckoutPage'
 		},
 		{
 			icon: 'ios-log-in',
