@@ -20,7 +20,7 @@ page-home {
     ion-content {
 
         background-color: $color7 !important;
-        .slider-box {
+        .slider-header {
             height: 23em;
             background-color: $tomato;
             // background-image: linear-gradient(-135deg, $tomato, #111);
@@ -30,6 +30,7 @@ page-home {
                 position: relative;
                 display: block;
                 color: $white;
+
                 font-weight: 900;
                 font-size: 1.5em;
 
@@ -40,13 +41,11 @@ page-home {
                         font-size: 2em;
                     }
                 }
-
                 .title {
                     position: absolute;
                     top: .3em;
                     font-size: 1.1em;
                 }
-
             }
 
 
@@ -127,31 +126,25 @@ page-home {
                             }
                         }
                     }
-
                 }
-
-
             }
-
         }
 
         .slider-menu {
-            margin-top: 3em;
+            margin-top: 2em;
             padding: 3em 0em 1.5em 1.5em;
 
             .menu {
                 font-size: .7em;
                 font-weight: 500;
+                text-align: center;
                 // border: 1px solid tomato;
 
                 img {
-                    width: 5em !important;
-                    height: 5em !important;
-                    object-fit: cover;
-                    // border: 1px solid tomato;
-
-                    border-radius: 1em;
-                    padding-bottom: .5em;
+                    padding: .5em;
+                    width: 100% !important;
+                    display: block;
+                    border-radius: 1.5em;
                 }
             }
         }
