@@ -1,8 +1,8 @@
 {
-  "name": "food-apps",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular",
-  "id": "2e14a532"
+    "name": "food-apps",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "ionic-angular",
+    "id": "2e14a532"
 }
